@@ -1,0 +1,187 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    user-select: none;
+}
+
+body{
+    background-color: rgb(163, 202, 91);
+    text-align: center;
+}
+
+header{
+    min-width: 700px;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer{
+    min-width: 700px;
+    height: 5vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    bottom: 0;
+}
+
+
+.logo{
+    display: flex;
+    height: 60px;
+}
+
+h1{
+    margin-left: 1rem;
+    color: black;
+    font-size: 3em;
+}
+
+#play{
+    padding: .5rem;
+    margin-left: 1rem;
+}
+
+.container{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 630px;
+    min-width: 630px;
+    height: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    box-sizing: content-box;
+    position: relative;
+}
+.sq{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+}
+
+.selected{
+    background-color: lightgrey;
+    color: black;
+}
+
+.easy{
+width: 63px;
+height: 63px;
+}
+
+.medium{
+width: 70px;
+height: 70px;
+}
+
+.hard{
+width: 90px;
+height: 90px;
+}
+
+.mostra-mine{
+    background-color: darkred;
+}
+
+.esplosa{
+    background-color: red;
+}
+
+.endgame{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+} */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+header {
+	flex: 0 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5rem 2rem;
+}
+
+.container {
+	flex: 1 0 0;
+	display: flex;
+	height: 100%;
+	background-color: salmon;
+}
+
+.start-screen {
+	margin: auto;
+}
+
+.grid {
+	--sideSquare: 10;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 500px;
+	height: 500px;
+	border: 2px solid black;
+}
+
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	height: calc(100% / var(--sideSquare));
+	width: calc(100% / var(--sideSquare));
+}
+
+/* .cell.active {
+	background-color: gold;
+} */
+
+.hidden {
+	display: none;
+}
+
+.cell.mine {
+    background-color: red;
+}
+
+.cell.no-mine {
+    background-color: green;
+}

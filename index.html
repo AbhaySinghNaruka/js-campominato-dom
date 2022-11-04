@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Minato</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="script/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="7e6fab67-d53c-461c-b69a-70fd485a6d0f.jfif">
+            <h1>Campo Minato</h1>
+        </div>
+        <div class="selection">
+            Difficolta':
+            <select id="difficulty">
+                <option value="1">Facile</option>
+                <option value="2">Medio</option>
+                <option value="3">Difficile</option>
+            </select>
+            <button id="play">Nuova Partita</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <footer>
+        <span>Made with &hearts; by Boolean</span>
+        <div>Guarda le mine!! <button id="show">Mostra le mine in campo</button></div>
+    </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Griglia dinamica</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>Campo minato</h1>
+		<div class="controls">
+			<select name="level" id="select-level">
+				<option value="100">Facile</option>
+				<option value="81">Medio</option>
+				<option value="49">Difficile</option>
+			</select>
+			<button id="btn-play">Play!</button>
+			<button id="btn-help" data-function="show-help">Show help</button>
+		</div>
+	</header>
+	<div class="container">
+		<div class="start-screen">
+			<h2>Benvenuto in campo minato</h2>
+		</div>
+		<div class="grid hidden"></div>
+	</div>
+</body>
+</html>
